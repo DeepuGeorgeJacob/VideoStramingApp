@@ -26,7 +26,7 @@ jobs:
       run: ./gradlew build
         # Upload APK as a GitHub Artifact
     - name: Upload Debug APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: invidi.apk
         path: invidi/build/outputs/apk/debug/invidi-debug.apk
